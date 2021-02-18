@@ -15,7 +15,6 @@ const count = 5;
 const client = yelp.client(apiKey);
 const businesses = [];
 
-
 app.get('/api/getBusinesses', (req, res) => {
     client.search(searchRequest).then(response => {
       response.jsonBody.businesses.forEach(iterate);
