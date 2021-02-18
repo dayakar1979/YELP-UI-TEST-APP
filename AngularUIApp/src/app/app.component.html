@@ -1,0 +1,17 @@
+<div>
+    <h3 style="text-align: center">Business List</h3>
+    <table>
+      <tr>
+        <th>Business Name</th>
+        <th>Address</th>
+        <th>Review</th>
+        <th>Reviewer</th>
+      </tr>
+      <tr *ngFor="let business of businesses">
+        <td>{{business.name}}</td>
+        <td>{{business.address}}</td>
+        <td>{{business.review}}</td>
+        <td>{{business.reviewer}}</td>
+      </tr>
+    </table>
+  </div>
